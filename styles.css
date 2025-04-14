@@ -1,0 +1,416 @@
+/* LinkedIn Lead Scraper - Custom CSS Styles */
+
+/* Main theme colors */
+:root {
+    --primary-color: #0077B5;
+    --secondary-color: #00A0DC;
+    --accent-color: #0073B1;
+    --light-bg: #f3f6f8;
+    --dark-text: #283e4a;
+    --medium-text: #5c6f7c;
+    --light-text: #86888a;
+    --success-color: #0a8754;
+    --warning-color: #f5a623;
+    --error-color: #e74c3c;
+    --card-border: #e0e0e0;
+    --hover-bg: #eef3f8;
+}
+
+/* Global styles */
+.main-header {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+.sub-header {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-weight: 600;
+    padding-bottom: 0.3rem;
+}
+
+/* Card styles */
+.card {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid var(--primary-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Metric card styles */
+.metric-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    border: 1px solid var(--card-border);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.metric-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.metric-value {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.metric-label {
+    font-size: 1rem;
+    color: var(--medium-text);
+    font-weight: 500;
+}
+
+/* Button styles */
+.stButton > button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.stButton > button:hover {
+    background-color: var(--accent-color);
+}
+
+/* Secondary button style */
+.secondary-button > button {
+    background-color: white;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.secondary-button > button:hover {
+    background-color: var(--light-bg);
+}
+
+/* Success button style */
+.success-button > button {
+    background-color: var(--success-color);
+}
+
+.success-button > button:hover {
+    background-color: #076d43;
+}
+
+/* Warning button style */
+.warning-button > button {
+    background-color: var(--warning-color);
+}
+
+.warning-button > button:hover {
+    background-color: #e09612;
+}
+
+/* Danger button style */
+.danger-button > button {
+    background-color: var(--error-color);
+}
+
+.danger-button > button:hover {
+    background-color: #d62c1a;
+}
+
+/* Form styles */
+.stTextInput > div > div > input {
+    border-radius: 4px;
+    border: 1px solid var(--card-border);
+}
+
+.stTextInput > div > div > input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 1px var(--primary-color);
+}
+
+/* Sidebar styles */
+.sidebar .sidebar-content {
+    background-color: var(--light-bg);
+}
+
+/* Status indicators */
+.status-indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.status-active {
+    background-color: var(--success-color);
+}
+
+.status-inactive {
+    background-color: var(--light-text);
+}
+
+.status-warning {
+    background-color: var(--warning-color);
+}
+
+.status-error {
+    background-color: var(--error-color);
+}
+
+/* Table styles */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.styled-table thead tr {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: var(--light-bg);
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.styled-table tbody tr:hover {
+    background-color: var(--hover-bg);
+}
+
+/* Badge styles */
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.badge-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.badge-success {
+    background-color: var(--success-color);
+    color: white;
+}
+
+.badge-warning {
+    background-color: var(--warning-color);
+    color: white;
+}
+
+.badge-danger {
+    background-color: var(--error-color);
+    color: white;
+}
+
+.badge-light {
+    background-color: var(--light-bg);
+    color: var(--dark-text);
+}
+
+/* Profile card styles */
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--card-border);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+    border: 2px solid var(--primary-color);
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--dark-text);
+    margin-bottom: 0.25rem;
+}
+
+.profile-title {
+    font-size: 1rem;
+    color: var(--medium-text);
+    margin-bottom: 0.25rem;
+}
+
+.profile-location {
+    font-size: 0.875rem;
+    color: var(--light-text);
+}
+
+.profile-section {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--card-border);
+}
+
+.profile-section-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.profile-section-item {
+    margin-bottom: 0.75rem;
+}
+
+.profile-section-item-title {
+    font-weight: 500;
+    color: var(--dark-text);
+    margin-bottom: 0.25rem;
+}
+
+.profile-section-item-subtitle {
+    font-size: 0.875rem;
+    color: var(--medium-text);
+}
+
+.profile-section-item-date {
+    font-size: 0.75rem;
+    color: var(--light-text);
+}
+
+/* Skill tag styles */
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.skill-tag {
+    background-color: var(--light-bg);
+    color: var(--primary-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+/* Footer styles */
+.footer {
+    margin-top: 3rem;
+    text-align: center;
+    color: var(--light-text);
+    font-size: 0.8rem;
+    padding: 1rem;
+    border-top: 1px solid var(--card-border);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .main-header {
+        font-size: 2rem;
+    }
+    
+    .sub-header {
+        font-size: 1.5rem;
+    }
+    
+    .metric-value {
+        font-size: 2rem;
+    }
+    
+    .profile-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .profile-image {
+        margin-bottom: 1rem;
+        margin-right: 0;
+    }
+}
+
+/* Animation for loading states */
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.loading-pulse {
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--light-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-color);
+}
